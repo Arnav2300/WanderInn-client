@@ -1,0 +1,32 @@
+@import url("https://fonts.googleapis.com/css2?family=Fuggles&family=Great+Vibes&family=Libre+Baskerville&family=Montserrat&family=Raleway&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .accLink {
+    @apply flex justify-center items-center relative;
+  }
+  .accLink::before {
+    @apply content-[''] absolute w-[100%] h-[100%] bg-primary top-0 left-0 bottom-0 right-0 inset-0 scale-x-0 transition-transform ease-in-out origin-right -skew-x-12 duration-300;
+  }
+  .accLink:hover::before {
+    @apply scale-x-100 origin-left;
+  }
+  .accLink:hover {
+    @apply text-white duration-300 ease-in-out;
+  }
+}
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: #c5c5c5;
+  border-radius: 2px;
+}
+::-webkit-scrollbar-thumb {
+  background: #ff5a5f;
+  border-radius: 5px;
+}
