@@ -201,7 +201,7 @@ export default function NewListing() {
                   addedPhotos.map((fileName) => (
                     <div className="flex relative">
                       <img
-                        src={"http://localhost:5000/uploads/" + fileName}
+                        src={"https://wanderinn-api.onrender.com/uploads/" + fileName}
                         className="rounded-md border w-full h-48 object-cover"
                         key={fileName}
                       />

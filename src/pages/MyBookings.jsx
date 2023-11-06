@@ -43,7 +43,7 @@ export default function MyBookings() {
                 <figure>
                   <img
                     src={
-                      "http://localhost:5000/uploads/" +
+                      "https://wanderinn-api.onrender.com/uploads/" +
                         booking?.place.photos[0] || scenery
                     }
                     alt=""

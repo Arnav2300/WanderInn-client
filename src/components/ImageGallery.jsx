@@ -2,7 +2,7 @@ import { PiDotsNine } from "react-icons/pi";
 import scenery from "../images/scenery.svg";
 export default function ImageGallery({ prop }) {
   const { photos } = prop;
-  const url = "http://localhost:5000/uploads/";
+  const url = "https://wanderinn-api.onrender.com/uploads/";
   return (
     <div className="h-[400px] relative">
       <div className="grid grid-cols-1 lg:grid-cols-6 md:grid-cols-3 bg-white gap-2">

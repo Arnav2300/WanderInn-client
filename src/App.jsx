@@ -12,7 +12,7 @@ import NewListing from "./pages/NewListing";
 import SingleListing from "./pages/SingleListing";
 import MyBookings from "./pages/MyBookings";
 
-axios.defaults.baseURL = "http://localhost:5000";
+axios.defaults.baseURL = "https://wanderinn-api.onrender.com";
 axios.defaults.withCredentials = true;
 
 function App() {

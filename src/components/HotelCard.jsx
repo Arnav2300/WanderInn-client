@@ -3,7 +3,7 @@ const HotelCard = ({ data }) => {
   const title = data.title;
   const add = data.address;
   let imgSrc = data.photos[0];
-  imgSrc = imgSrc ? "http://localhost:5000/uploads/" + imgSrc : scenery;
+  imgSrc = imgSrc ? "https://wanderinn-api.onrender.com/uploads/" + imgSrc : scenery;
   const price = data.price;
   //const id = data._id;
   return (
