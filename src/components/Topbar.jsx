@@ -1,6 +1,4 @@
 import React, { useContext } from "react";
-import pp from "../images/profile/av1.png";
-import Login from "./Login";
 import {
   PiMagnifyingGlass,
   PiList,
