@@ -9,7 +9,7 @@ const HotelCard = ({ data }) => {
   return (
     <div className="card w-56 bg-white shadow-lg card-compact hover:text-gray-500 hover:shadow-2xl transition duration-300 delay-150 ease-in-out">
       <figure>
-        <img src={imgSrc} className="h-[200px] w-full object-cover" />
+        <img src={imgSrc} className="h-[200px] w-full object-cover" alt="" />
       </figure>
       <div className="card-body">
         <h2 className="card-title truncate">{title}</h2>

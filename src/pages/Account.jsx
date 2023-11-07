@@ -2,7 +2,7 @@ import { useContext } from "react";
 import Topbar from "../components/Topbar";
 import { UserContext } from "../context/UserContext";
 import BottomBar from "../components/BottomBar";
-import { Link, Navigate, Outlet, useParams } from "react-router-dom";
+import { Link, Navigate } from "react-router-dom";
 
 export default function Account() {
   const { user, ready } = useContext(UserContext);
@@ -32,12 +32,12 @@ export default function Account() {
           <Link to={"/account/mylistings"} className="accLink">
             <h1 className="text-4xl p-4 z-10">My Listings</h1>
           </Link>
-          <Link to={"/account/listings"} className="accLink">
+          <Link to={"/account/mylistings/newlisting"} className="accLink">
             <h1 className="text-4xl p-4 z-10">List Property</h1>
           </Link>
-          <Link to={"/account/bookmarks"} className="accLink">
+          {/* <Link to={"/account/bookmarks"} className="accLink">
             <h1 className="text-4xl p-4 z-10">Bookmarks</h1>
-          </Link>
+          </Link> */}
           <Link to={"/account/profile"} className="accLink">
             <h1 className="text-4xl p-4 z-10">Profile</h1>
           </Link>
